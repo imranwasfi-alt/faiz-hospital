@@ -1,78 +1,199 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Faiz Hospital</title>
-    <style>
-        /* Basic styles */
-        body { font-family: Arial, sans-serif; }
-        .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Sit on top */
-            left: 0;
-            top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-        }
-        .modal-content {
-            background-color: #fefefe;
-            margin: 20px auto; /* 20px top and bottom, auto left and right */
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%; /* Could be more or less, depending on screen size */
-            overflow-y: auto; /* Enables scrolling for the modal */
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faiz Hospital & ENT Wellness Centre | Siwan, Bihar</title>
+  <meta name="description" content="Faiz Hospital & ENT Wellness Centre, Siwan, Bihar. ENT care, medical services, and patient-focused treatment." />
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; margin: 0; background: #f7f9fb; color: #333; }
+    header { background: #0d6efd; color: white; padding: 20px; }
+    header h1 { margin: 0; font-size: 26px; }
+    header p { margin: 5px 0 0; }
+    nav { background: #084298; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 12px; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    .container { max-width: 1000px; margin: auto; padding: 20px; }
+    .section { background: white; padding: 20px; margin-bottom: 20px; border-radius: 6px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
+    .two-column { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .card { background:#f7f9fb; padding:15px; border-radius:6px; }
+    .doctor { display:flex; gap:15px; align-items:flex-start; }
+    .doctor img { width:120px; height:150px; object-fit:cover; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,0.15); }
+    h2 { color: #0d6efd; margin-top: 0; }
+    ul { padding-left: 20px; }
+    footer { background: #0d6efd; color: white; text-align: center; padding: 15px; }
+    .btn { display: inline-block; background: #0d6efd; color: white; padding: 10px 16px; border-radius: 4px; text-decoration: none; }
+    .whatsapp-btn { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; padding: 12px 16px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+    .whatsapp-btn:hover { background: #1ebe5d; }
+    .btn:hover { background: #084298; }
+  </style>
 </head>
 <body>
-    <h1>Welcome to Faiz Hospital</h1>
-    <button id="myBtn">Open Appointment Modal</button>
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Appointment Booking</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <br>
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date" required>
-                <br>
-                <label for="time">Time:</label>
-                <input type="time" id="time" name="time" required>
-                <br>
-                <button type="submit">Book Appointment</button>
-            </form>
+
+<header>
+  <h1>Faiz Hospital & ENT Wellness Centre</h1>
+  <p>Comprehensive ENT & Medical Care | Siwan, Bihar, India</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About Us</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+  <section id="home" class="section">
+    <h2>Welcome</h2>
+    <p>
+      Welcome to <strong>Faiz Hospital & ENT Wellness Centre</strong>, a patient‑focused hospital in Siwan, Bihar,
+      providing reliable ENT and general medical services with modern care standards.
+    </p>
+  </section>
+
+  <section id="about" class="section">
+    <h2>Departments</h2>
+    <div class="two-column">
+      <div class="card">
+        <h3>Department of ENT & Head & Neck Surgery</h3>
+        <div class="doctor">
+          <img src="dr-imran.jpg" alt="Dr Imran Wasfi Khan">
+          <p><strong>Consultant:</strong><br>
+          <strong>Dr Imran Wasfi Khan</strong><br>
+          MBBS, MD (C.M), MS ENT & Head & Neck Surgery<br>
+          Ex Resident, AIIMS New Delhi<br>
+          Ex Senior Resident, KIMS Bhubaneswar</p>
         </div>
+      </div>
+      <div class="card">
+        <h3>Department of General Surgery</h3>
+        <p><strong>Consultant:</strong><br>
+        <strong>Dr Ausaf Ahmad Khan</strong><br>
+        MBBS, MS General Surgery (AMU)<br>
+        Senior Consultant Surgeon<br>
+        Ex ACMO, Govt. of Uttar Pradesh</p>
+      </div>
     </div>
-    <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
+  </section>
 
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <ul>
+      <li>ENT Consultation (Ear, Nose & Throat problems)</li>
+      <li>Hearing & Ear Infection Treatment</li>
+      <li>Nose & Sinus Care</li>
+      <li>Throat & Voice Disorders</li>
+      <li>General Medical Consultation</li>
+      <li>Minor Procedures & Follow‑up Care</li>
+    </ul>
 
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
+    <div class="two-column">
+      <div class="card">
+        <h3>ENT Surgeries</h3>
+        <ul>
+          <li>Tonsillectomy</li>
+          <li>Adenoidectomy</li>
+          <li>Septoplasty (DNS Surgery)</li>
+          <li>FESS – Endoscopic Sinus Surgery</li>
+          <li>Myringotomy & Grommet Insertion</li>
+          <li>Tympanoplasty</li>
+          <li>Mastoid Surgery</li>
+          <li>Microlaryngeal Surgery</li>
+          <li>Endoscopic DCR</li>
+          <li>Foreign Body Removal</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>General Surgeries</h3>
+        <ul>
+          <li>Hernia Surgery</li>
+          <li>Appendectomy</li>
+          <li>Gall Bladder Surgery</li>
+          <li>Piles, Fissure & Fistula Surgery</li>
+          <li>Hydrocele & Varicocele Surgery</li>
+          <li>Breast Lump / Abscess Surgery</li>
+          <li>Minor Surgical Procedures</li>
+          <li>Emergency General Surgery</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-        // When the user clicks on the button, open the modal 
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
+  <section id="gallery" class="section">
+    <h2>ENT Care Highlights</h2>
+    <p style="margin-bottom:15px;">Illustrative visuals representing our ENT services (not real patient photos).</p>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:20px; text-align:center;">
+      <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/2966/2966488.png" alt="Ear Care Illustration" style="width:80px;">
+        <p>Ear Examination & Care</p>
+      </div>
+      <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/4246/4246122.png" alt="Nose and Sinus Illustration" style="width:80px;">
+        <p>Nose & Sinus Care</p>
+      </div>
+      <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/4246/4246110.png" alt="Throat and Voice Illustration" style="width:80px;">
+        <p>Throat & Voice Care</p>
+      </div>
+      <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/4320/4320337.png" alt="ENT Equipment Illustration" style="width:80px;">
+        <p>Modern ENT Equipment</p>
+      </div>
+    </div>
+  </section>
 
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
+  <section id="contact" class="section">
+    <h2>Our Hospital Locations</h2>
 
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
+    <div class="two-column">
+      <div class="card">
+        <h3>Faiz Hospital & ENT Wellness Centre</h3>
+        <p><strong>📍 Address:</strong><br>Faiz Hospital, Makhdoom Sarai, Siwan-841226, Bihar</p>
+        <p><strong>📞 Phone:</strong> +91-9471468016</p>
+        <p><strong>🕒 Timings:</strong> 24 Hours Open</p>
+        <a class="btn" href="tel:+919471468016">Call – Faiz Hospital</a>
+      </div>
+
+      <div class="card">
+        <h3>Neo‑Faiz Hospital</h3>
+        <p><strong>📍 Address:</strong><br>Neo‑Faiz Hospital, Rasoolpur, Barharia Road, Siwan-841227, Bihar</p>
+        <p><strong>📞 Phone:</strong> +91-9471468016</p>
+        <p><strong>🕒 Timings:</strong> 24 Hours Open</p>
+        <a class="btn" href="tel:+919471468016">Call – Neo‑Faiz Hospital</a>
+      </div>
+    </div>
+
+    <hr style="margin:30px 0;">
+
+    <h2>Online Enquiry</h2>
+    <p style="margin-bottom:10px;">Quick enquiry – we will reply to you.</p>
+
+    <form action="https://formsubmit.co/imran.wasfi@gmail.com" method="POST" style="max-width:420px; font-size:14px;">
+      <input type="hidden" name="_replyto" value="email">
+      <input type="hidden" name="_subject" value="New Online Enquiry – Faiz Hospital">
+      <input type="hidden" name="_captcha" value="false">
+
+      <input type="text" name="name" placeholder="Your Name" required style="width:100%; padding:6px; margin-bottom:8px;">
+
+      <input type="email" name="email" placeholder="Your Email" required style="width:100%; padding:6px; margin-bottom:8px;">
+
+      <input type="text" name="phone" placeholder="Mobile Number" required style="width:100%; padding:6px; margin-bottom:8px;">
+
+      <textarea name="message" rows="3" placeholder="Your Message" required style="width:100%; padding:6px; margin-bottom:10px;"></textarea>
+
+      <button type="submit" class="btn" style="padding:8px 14px; font-size:14px;">Send</button>
+    </form>
+
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2026 Faiz Hospital & ENT Wellness Centre | Siwan, Bihar</p>
+</footer>
+
+<a href="https://wa.me/919471468016" class="whatsapp-btn" target="_blank">💬 WhatsApp</a>
+
 </body>
 </html>
